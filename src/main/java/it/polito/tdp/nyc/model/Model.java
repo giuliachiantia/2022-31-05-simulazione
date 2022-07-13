@@ -12,6 +12,16 @@ import org.jgrapht.graph.SimpleWeightedGraph;
 import it.polito.tdp.nyc.db.NYCDao;
 
 public class Model {
+	/*
+	 * AAA:
+	 * SELECT h1.City,h2.City, COUNT(DISTINCT(h1.Provider))
+	 * FROM nyc wifi hotspot locations h1, nyc wifi hotspot locations h2
+	 * WHERE h1.City>h2.City AND h1.Provider=h2.Provider
+	 * GROUP BY h1.City,h2.City
+	 * VVV:
+	 * SELECT DISTINCT h.City
+	 * FROM nyc wifi hotspot locations h
+	 */
 
 	private NYCDao dao;
 	private Graph <String, DefaultWeightedEdge> grafo;
