@@ -36,13 +36,13 @@ public class Model {
 			Graphs.addEdge(this.grafo, a.getC1(), a.getC2(), a.getPeso());
 		}
 		/* for(City c1 : this.cities) {
-for(City c2 : this.cities) {
-if(!c1.equals(c2)) {
-double peso = LatLngTool.distance(c1.getPosizione(), c2.getPosizione(), LengthUnit.KILOMETER);
-Graphs.addEdge(this.grafo, c1, c2, peso);
-}
-}
-}*/
+		for(City c2 : this.cities) {
+			if(!c1.equals(c2)) {
+			double peso = LatLngTool.distance(c1.getPosizione(), c2.getPosizione(), LengthUnit.KILOMETER);
+			Graphs.addEdge(this.grafo, c1, c2, peso);
+			}
+			}
+			}*/
 
 		System.out.println("Grafo Creato");
 		System.out.println("#Vertici " +this.grafo.vertexSet().size()+ " \n");

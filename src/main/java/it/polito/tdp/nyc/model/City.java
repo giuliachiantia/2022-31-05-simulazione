@@ -1,22 +1,14 @@
 package it.polito.tdp.nyc.model;
 
-
-
 import com.javadocmd.simplelatlng.LatLng;
 
-
-
 public class City {
-
-
 
 	private String nome ;
 
 	private LatLng posizione ;
 
 	private int nHotSpot;
-
-
 
 	public City(String nome, LatLng posizione, int nHotSpot) {
 
